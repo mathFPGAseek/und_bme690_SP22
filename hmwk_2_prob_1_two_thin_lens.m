@@ -1,22 +1,21 @@
 %---------------------------------------------------------------------
-% file name : hmwk_3_prob_3_opitcal_sensor.m
+% file name : hmwk_2_prob_1_two_thin_lens.m
 % Student: Ray Duran
-% Date: 3/21/22
+% Date: 2/19/22
 % Class : BME 690 Professor Liang, Spring Semester
 % University of North Dakota
 % Descr: 
-% Optical Sensor PMT
+% Two thin lens
 %---------------------------------------------------------------------
 
-% All of this is electrons / sec
 
-I = 5e-6;% C/S
+n1 = 1.5; % refractive index
+so = 50; % mm
+R1 = 30; % mm
+R2 = 30; % mm
 
-electrons = I*6.24e18;               %  C* electrons/C
-
-% So how many photons ar 
-
-E = (3e8)*(6.62607015e-34)/(550e-9); % Joules one photon h*c/lambda
+% Part a.
+% use equation: 1/f = (nl-1)(1/R1 - 1/R2)
+f = ((1.5-1)*(1/30 - 1/30))^-1;
 
 debug = 1;
-
